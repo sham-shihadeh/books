@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookra</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <a class="logo"> BOOKRA </a>
+      <nav>
+        <ul class="nav__links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse.html">Browse</a></li>
+          <li><a href="bookclubs.html">Club</a></li>
+        </ul>
+      </nav>
+      <a class="cta" href="bookrating.html"> Search</a>
+      <p class="menu cta">Menu</p>
+    </header>
+    <div id="mobile__menu" class="overlay">
+      <a class="close">&times;</a>
+      <div class="overlay__content">
+        <a href="index.html">Home</a>
+        <a href="browse.html">Browse</a>
+        <a href="bookclubs.html">Book Clubs</a>
+        <a href="bookrating.html">Search</a>
+      </div>
+    </div>
+
+
+    <main>
+      <p>
+        in this page you can search any book and you will find different versions of it 
+        in addition to the author's name and a brief description about the book.
+      </p>
+      <section class="searchclass">
+        <input type="text" id="search-box" placeholder="Enter book title...">
+        <button id="search-btn">search</button>
+      </section>
+      <div id="loading-spinner"></div>
+
+      <div id="results"></div>
+     
+
+    </main>
+    <script src="api.js"></script>
+	
+  </body>
+</html>
