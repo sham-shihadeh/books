@@ -260,3 +260,103 @@ header {
   
   
   
+  
+    /* Mobile Nav */
+  
+    .menu {
+      display: none;
+    }
+    
+    .overlay {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      background-color: #24252a;
+      overflow-x: hidden;
+      transition: all 0.5s ease 0s;
+    }
+    
+    .overlay--active {
+      width: 100%;
+    }
+    
+    .overlay__content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .overlay a {
+      padding: 15px;
+      font-size: 36px;
+      display: block;
+      transition: all 0.3s ease 0s;
+    }
+    
+    .overlay a:hover, .overlay a:focus {
+      color: #0088a9;
+    }
+    .overlay .close {
+      position: absolute;
+      top: 20px;
+      right: 45px;
+      font-size: 60px;
+      color: #edf0f1;
+      cursor: pointer;
+    }
+    /* Styles for Author Quotes section */
+    
+    #author-quotes {
+      margin-top: 2rem;
+      border-top: 1px solid #ccc;
+      padding-top: 2rem;
+      text-align: center;
+    }
+    
+    #author-quotes h2 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      margin-bottom: 2rem;
+      color: #0088a9;
+    }
+    
+    blockquote {
+      font-style: italic;
+      margin-bottom: 3rem;
+      border-left: 4px solid #0088a9;
+      padding-left: 1rem;
+    }
+    
+    blockquote p {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin: 0;
+      color: #edf0f1;
+    }
+    
+    cite {
+      display: block;
+      text-align: right;
+      font-size: 1.2rem;
+      margin-top: 1rem;
+      color: #757575;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+  
+  
+  
+  
+  
+  
+  
+  
+  
