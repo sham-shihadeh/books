@@ -1,0 +1,262 @@
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: #c2cdd6;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+  }
+  .logo {
+    margin-right: auto;
+    color: #222437;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav__links a, .cta, .overlay__content a {
+    color: #222437;
+    text-decoration: none;
+  }
+  
+  .nav__links li {
+    padding: 0px 20px;
+  }
+  
+  .nav__links li a {
+    transition: all 0.3s ease 0s;
+  }
+  
+  .nav__links li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .cta:hover, .button:hover,  #search-btn:hover, #topbtn:hover  {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
+  body {
+    margin: 0;
+    background: #222437;
+    font-weight: 800;
+    font-size: 18px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #c2cdd6;
+    line-height: 1.5;
+  }
+  
+  p {
+    padding: 0 1em;
+    max-width: 600px;
+    margin: 1em auto;
+    font-size: 17px;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 1.5em;
+  }
+  
+  p a, figcaption a {
+    color: #0088a9;
+  }
+  
+  main {
+    min-width: 240px;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  .gallery {
+    display: flex;
+    overflow: auto;
+    text-align: center;
+    max-width: 1300px;
+    margin-bottom: 5em ;
+  }
+  
+  
+  img {
+    border: 0.5px solid #ddd;
+    border-radius: 4px;
+    padding: 1px;
+    max-width: 100px;
+    height: auto;
+  
+  }
+  
+  
+  
+  
+  figcaption {
+    font-size: 10px;
+  }
+  
+  
+  
+  img:hover {
+    box-shadow: 0 0 2.5px 1.5px #000000;
+    transition: all ease-in-out 250ms;
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+  }
+  
+  
+  
+  
+  
+  
+  .button, #topbtn, p a {
+    display: block;
+    margin: 0 auto 10px;
+    padding: 6px 12px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0088a9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #222437;
+  }
+  
+  #topbtn{
+    margin-top: 5px;
+  }
+  
+  
+  #SelectionButtons {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .button-container {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10em;
+    padding-top: 1em;
+    
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+  }
+  section a {
+    margin-top: 2em;
+  }
+  
+  .button, section a , #topbtn{
+    margin-bottom: 10px;
+    width: 290px ;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 400;
+  
+  }
+  @media screen and (max-width: 450px) {
+    .nav__links {
+      display: none;
+    }
+  
+    #mobile__menu {
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      left: 0;
+      background-color: #24252a;
+      overflow-y: auto;
+      transition: all 0.5s ease-in-out;
+      transform: translateX(-100%);
+    }
+  
+    #mobile__menu.show {
+      transform: translateX(0%);
+    }
+  
+    #mobile__menu .overlay__content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+  
+    #mobile__menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  
+    #mobile__menu ul li {
+      margin-bottom: 1rem;
+    }
+  
+    #mobile__menu ul li a {
+      font-size: 1.5rem;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    #mobile__menu .close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      font-size: 2rem;
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    .button-container{
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 800px) {
+    .nav__links, .cta {
+      display: none;
+    }
+    .menu {
+      display: initial;
+    }
+    .overlay:hover .overlay__content{
+      display: block;
+    }
+  
+    .overlay__content a{
+      display: block;
+      color: #24252a;
+    }
+    .overlay__content a{
+      color: #fff;
+      background-color: #00A4BD;
+    }
+    .button-container{
+      display: block;
+    }
+  
+  }
+  
+  
+  
